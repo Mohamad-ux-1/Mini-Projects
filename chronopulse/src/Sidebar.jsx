@@ -31,7 +31,7 @@ export default function Sidebar({ onNavigate }) {
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.25, px: 1, py: 1.5, mb: 2 }}>
         <SmartToyOutlined sx={{ color: 'primary.main', fontSize: 28 }} />
         <Typography variant="h6" component="span">
-          ChronoPulse
+          ChronoPulse | 
         </Typography>
       </Box>
 
