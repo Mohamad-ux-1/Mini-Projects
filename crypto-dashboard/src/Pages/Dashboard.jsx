@@ -5,9 +5,9 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import SpeedOutlinedIcon from '@mui/icons-material/SpeedOutlined';
 import CryptoCard from '../components/CryptoCard';
-import { useMarketData } from '../hooks/useMarketData';
+import { useMarketData } from '../Hooks/useMarketData';
 // تم تعديل الرابط هنا لإزالة .mock واستخدام الملف الحقيقي
-import { useGlobalStats, formatUsdCompact, formatGwei } from '../hooks/useGlobalStats.mock.js';
+import { useGlobalStats, formatUsdCompact, formatGwei } from '../Hooks/useGlobalStats.mock.js';
 import MainChart from '../components/MainChart';
 import MarketTable from '../MarketTable';
 

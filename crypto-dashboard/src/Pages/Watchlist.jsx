@@ -17,8 +17,8 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import BoltIcon from '@mui/icons-material/Bolt';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
-import useWatchlistData, { formatCompact } from '../hooks/useWatchlistData';
-import useWatchlistConfig from '../hooks/useWatchlistConfig';
+import useWatchlistData, { formatCompact } from '../Hooks/useWatchlistData';
+import useWatchlistConfig from '../Hooks/useWatchlistConfig';
 import { AddAssetDialog, AlertsDialog, CompareDialog, ColumnsMenu } from '../components/WatchlistDialogs';
 
 const MONO = '"JetBrains Mono", monospace';
