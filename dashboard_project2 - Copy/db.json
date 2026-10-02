@@ -1,0 +1,267 @@
+{
+  "weekly-sales": [
+
+    {
+      "day": "Mon",
+      "sales": 3,
+      "revenue": "$3.4k",
+      "id": "T2FT2iXrD4A"
+    },
+    {
+      "day": "Tue",
+      "sales": 7,
+      "revenue": "$7.2k",
+      "id": "OQ_vQkH17Wk"
+    },
+    {
+      "day": "Wed",
+      "sales": 6,
+      "revenue": "$6.4k",
+      "id": "YwKPbCDZLuc"
+    },
+    {
+      "day": "Thu",
+      "sales": 3,
+      "revenue": "$8.8k",
+      "id": "q6rKRwUpWkU"
+    },
+    {
+      "day": "Fri",
+      "sales": 2,
+      "revenue": "$7.6k",
+      "id": "dNMk0oy66qw"
+    },
+    {
+      "day": "Sat",
+      "sales": 4,
+      "revenue": "$4.2k",
+      "id": "7KXZxD0eIz8"
+    },
+    {
+      "day": "Sun",
+      "sales": 1,
+      "revenue": "$5.8k",
+      "id": "PWG_CvKzny8"
+    }
+  ],
+  "previous-weekly-sales": [
+    {
+      "day": "Sat",
+      "sales": 2,
+      "revenue": "$3.2k",
+      "id": "PTPEU6gwsGA"
+    },
+    {
+      "day": "Sun",
+      "sales": 4,
+      "revenue": "$6.8k",
+      "id": "_dOuByxCybs"
+    },
+    {
+      "day": "Mon",
+      "sales": 5,
+      "revenue": "$4.4k",
+      "id": "VGBkqdKRmEM"
+    },
+    {
+      "day": "Tue",
+      "sales": 6,
+      "revenue": "$5.2k",
+      "id": "hGuotlGmXIc"
+    },
+    {
+      "day": "Wed",
+      "sales": 3,
+      "revenue": "$7.4k",
+      "id": "HvDioq02h5g"
+    },
+    {
+      "day": "Thu",
+      "sales": 4,
+      "revenue": "$9.8k",
+      "id": "q_k-4Itg9XA"
+    },
+    {
+      "day": "Fri",
+      "sales": 1,
+      "revenue": "$6.6k",
+      "id": "2M0DolVJACI"
+    }
+  ],
+  "current-week": 25,
+  "previous-week": 15,
+  "pendingProducts": [
+    {
+      "id": "inst-001",
+      "name": "Yamaha C40 Guitar",
+      "category": "String",
+      "audioUrl": "/sounds/guitar_sample.mp3",
+      "price": "$140",
+      "submittedBy": "Store_A"
+    },
+    {
+      "id": "inst-002",
+      "name": "Roland FP-30X Digital Piano",
+      "category": "Keyboard",
+      "audioUrl": "/sounds/piano_sample.mp3",
+      "price": "$700",
+      "submittedBy": "Store_B"
+    }
+  ],
+  "noteData": [
+    {
+      "id": "1",
+      "category": "PROJECT",
+      "title": "UI Interface Analysis",
+      "content": "Reviewing final modifications on the HR system interface with a focus on user experience in interactive dashboards.",
+      "date": "May 24, 2026",
+      "tagColor": "#6366F1",
+      "tagBg": "#E0E7FF"
+    },
+    {
+      "id": "2",
+      "category": "PERSONAL",
+      "title": "Q3 Strategic Goals",
+      "content": "Developing programming skills using AI engines and learning modern software architecture techniques.",
+      "date": "May 23, 2026",
+      "tagColor": "#0EA5E9",
+      "tagBg": "#E0F2FE"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "Ahmad",
+      "password": "123456789",
+      "email": "ahmad123@gmail.com"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "sWQdx22y6OU"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "2-Ujbp_aRz8"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "kbY9FUsO9ac"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "xIiInZNfzME"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "5Zn-QExF4i4"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "cdOKj1ntVqE"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "5HoorJ3TAfM"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "5zCU65jSGZ8"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "N6EQpa043k8"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "-N3ZJkpIomA"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "mnz0yx053CA"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "ADaYXv-AkZ0"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "NN9PQWvZvy4"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "3XD10kNRZGs"
+    },
+    {
+      "email": "",
+      "password": "123456789",
+      "id": "Ew1sWuqx5xE"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "123456789",
+      "id": "QWlOZTWki3g"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "asdadadasdad",
+      "id": "uJZZfvqTw_s"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "asdadadasdad",
+      "id": "RlXLi4WCeLM"
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": "KW1ameVjqgk"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "123456789",
+      "id": "2S58PaTIoWI"
+    }
+  ],
+  "u": [
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "",
+      "id": "nzh_aoQ-X_A"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "",
+      "id": "y15KUKh5KJU"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "",
+      "id": "DubXTUdgEAY"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "",
+      "id": "6uZOJXAaCCQ"
+    },
+    {
+      "email": "ahmadahmad297123@gmail.com",
+      "password": "asdasdsadsa",
+      "id": "eV6gWXOHGxU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
