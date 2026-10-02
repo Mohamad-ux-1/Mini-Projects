@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {
     Dialog, DialogTitle, DialogContent, DialogActions, Button, TextField, Autocomplete, Stack, Switch,
-    Table, TableHead, TableBody, TableRow, TableCell, Menu, MenuItem, Checkbox, ListItemText, Typography,
+    Table, TableHead, TableBody, TableRow, TableCell, Menu, MenuItem, Checkbox, ListItemText, Typography, Box, useMediaQuery, useTheme,
 } from '@mui/material';
-import { CATALOG, formatCompact } from '../Hooks/useWatchlistData';
+import { CATALOG, formatCompact } from '../hooks/useWatchlistData';
 
 const MONO = '"JetBrains Mono", monospace';
 const usd = (n) =>
@@ -12,6 +12,7 @@ const pct = (n) => (n == null ? '—' : `${n >= 0 ? '+' : ''}${n.toFixed(2)}%`);
 
 // ---------------------------------------------------------------- Add asset
 export function AddAssetDialog({ open, onClose, onAdd, existingIds, categories }) {
+    const fs = useMediaQuery(useTheme().breakpoints.down('sm'));
     const [asset, setAsset] = useState(null);
     const [target, setTarget] = useState('');
     const [qty, setQty] = useState('0');
@@ -33,7 +34,7 @@ export function AddAssetDialog({ open, onClose, onAdd, existingIds, categories }
     };
 
     return (
-        <Dialog open={open} onClose={onClose} fullWidth maxWidth="xs">
+        <Dialog fullScreen={fs} open={open} onClose={onClose} fullWidth maxWidth="xs">
             <DialogTitle>Add asset to watchlist</DialogTitle>
             <DialogContent>
                 <Stack spacing={2} sx={{ mt: 1 }}>
@@ -82,14 +83,15 @@ function TargetField({ value, onCommit }) {
 }
 
 export function AlertsDialog({ open, onClose, rows, onUpdate }) {
+    const fs = useMediaQuery(useTheme().breakpoints.down('sm'));
     return (
-        <Dialog open={open} onClose={onClose} fullWidth maxWidth="sm">
+        <Dialog fullScreen={fs} open={open} onClose={onClose} fullWidth maxWidth="sm">
             <DialogTitle>Configure alerts</DialogTitle>
             <DialogContent>
                 <Typography sx={{ fontSize: '13px', color: 'text.secondary', mb: 1 }}>
                     You get a notification when an asset's price reaches its target.
                 </Typography>
-                <Table size="small">
+                <Box sx={{ overflowX: 'auto' }}><Table size="small">
                     <TableHead>
                         <TableRow>
                             <TableCell>Asset</TableCell>
@@ -110,7 +112,7 @@ export function AlertsDialog({ open, onClose, rows, onUpdate }) {
                             </TableRow>
                         ))}
                     </TableBody>
-                </Table>
+                </Table></Box>
             </DialogContent>
             <DialogActions><Button onClick={onClose}>Done</Button></DialogActions>
         </Dialog>
@@ -119,6 +121,7 @@ export function AlertsDialog({ open, onClose, rows, onUpdate }) {
 
 // ---------------------------------------------------------------- Compare
 export function CompareDialog({ open, onClose, rows }) {
+    const fs = useMediaQuery(useTheme().breakpoints.down('sm'));
     const metrics = [
         ['Price', (r) => usd(r.price)],
         ['24h change', (r) => pct(r.change)],
@@ -129,10 +132,10 @@ export function CompareDialog({ open, onClose, rows }) {
         ['Distance to target', (r) => `${r.distPct.toFixed(1)}%`],
     ];
     return (
-        <Dialog open={open} onClose={onClose} fullWidth maxWidth="md">
+        <Dialog fullScreen={fs} open={open} onClose={onClose} fullWidth maxWidth="md">
             <DialogTitle>Compare assets</DialogTitle>
             <DialogContent>
-                <Table size="small">
+                <Box sx={{ overflowX: 'auto' }}><Table size="small">
                     <TableHead>
                         <TableRow>
                             <TableCell />
@@ -147,7 +150,7 @@ export function CompareDialog({ open, onClose, rows }) {
                             </TableRow>
                         ))}
                     </TableBody>
-                </Table>
+                </Table></Box>
             </DialogContent>
             <DialogActions><Button onClick={onClose}>Close</Button></DialogActions>
         </Dialog>
