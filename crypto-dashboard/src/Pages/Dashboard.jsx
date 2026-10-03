@@ -5,9 +5,9 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import SpeedOutlinedIcon from '@mui/icons-material/SpeedOutlined';
 import CryptoCard from '../components/CryptoCard';
-import { useMarketData } from '../hooks/useMarketData';
+import { useMarketData } from '../Hooks/useMarketData';
 // تم تعديل الرابط هنا لإزالة .mock واستخدام الملف الحقيقي
-import { useGlobalStats, formatUsdCompact, formatGwei } from '../hooks/useGlobalStats.mock.js';
+import { useGlobalStats, formatUsdCompact, formatGwei } from '../Hooks/useGlobalStats.mock.js';
 import MainChart from '../components/MainChart';
 import MarketTable from '../MarketTable';
 
@@ -90,8 +90,8 @@ const Dashboard = () => {
                     </Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5, width: { xs: '100%', md: 390 }, flexShrink: 0 }}>
-                    <Box sx={{ ...statCardSx, minWidth: 184 }}>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5, width: { xs: '100%', md: 390 }, flexShrink: 0 ,flexGrow:1}}>
+                    <Box sx={{ ...statCardSx, minWidth: 184 ,flexGrow:1}}>
                         <Typography sx={statLabelSx}>24H Global Volume</Typography>
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                             <Typography sx={statValueSx}>{stats.volume != null ? formatUsdCompact(stats.volume) : '—'}</Typography>
@@ -104,7 +104,7 @@ const Dashboard = () => {
                         </Box>
                     </Box>
 
-                    <Box sx={{ ...statCardSx, minWidth: 172 }}>
+                    <Box sx={{ ...statCardSx, minWidth: 172,flexGrow:1 }}>
                         <Typography sx={statLabelSx}>BTC Dominance</Typography>
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.25 }}>
                             <Typography sx={statValueSx}>{stats.btcDominance != null ? stats.btcDominance.toFixed(1) : '—'}%</Typography>
@@ -114,7 +114,7 @@ const Dashboard = () => {
                         </Box>
                     </Box>
 
-                    <Box sx={{ ...statCardSx, minWidth: 150 }}>
+                    <Box sx={{ ...statCardSx, minWidth: 150,flexGrow:1 }}>
                         <Typography sx={statLabelSx}>ETH Gas Priority</Typography>
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                             <Typography sx={statValueSx}>{stats.gasGwei != null ? formatGwei(stats.gasGwei) : '—'} Gwei</Typography>
