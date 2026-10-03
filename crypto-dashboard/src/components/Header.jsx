@@ -10,8 +10,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ColorModeContext } from '../App';
 
-import { useMarketData } from '../Hooks/useMarketData';
-import { useGlobalStats } from '../Hooks/useGlobalStats.mock'; // تأكد من الاسم كما هو عندك
+import { useMarketData } from '../hooks/useMarketData';
+import { useGlobalStats } from '../hooks/useGlobalStats.mock'; // تأكد من الاسم كما هو عندك
 
 const MONO = '"JetBrains Mono", monospace';
 
